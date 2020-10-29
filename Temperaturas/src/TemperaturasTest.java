@@ -25,8 +25,9 @@ public class TemperaturasTest {
 		}
 				//OUTPUT
 		System.out.printf("La temperatura media ha sido de %.2f grados.\n",t.media());
-		System.out.printf("La temperatura máxima ha sido de %.2f grados.",t.max());
-
+		System.out.printf("La temperatura máxima ha sido de %.2f grados.\n",t.max());
+		System.out.print("Gráfico: \n");
+		t.pintaGráfico();
 	}
 
 }

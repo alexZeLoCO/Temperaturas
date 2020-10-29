@@ -74,4 +74,22 @@ public class Temperaturas {		//CLASE TEMPERATURAS
 		}
 		return max;		//DEVOLVER MAYOR
 	}
+	
+	/**
+	 * MÉTODO PINTAGRÁFICO()
+	 * 	UTILIZA DOS BUCLES PARA DIBUJAR UN GRÁFICO DE LAS TEMPERATURAS INTRODUCIDAS
+	 */
+	public void pintaGráfico() {
+		for (int h=0;h<24;h++) {
+			if (h<=9) {
+				System.out.printf(" %d : ",h);
+			} else {
+				System.out.printf("%d : ",h);
+			}
+				for (int i=1;i<=grados[h];i++) {					
+					System.out.print("*");
+				}
+			System.out.println("");
+		}
+	}
 }
